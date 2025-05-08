@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Melhoria: Meta tags para SEO -->
+  <meta name="description" content="Portfólio de Eduardo Corrêa de Lima - Desenvolvedor de jogos e soluções em Python">
+  <meta name="keywords" content="portfolio, desenvolvimento de jogos, python, godot, engenharia de software">
+  <meta name="author" content="Eduardo Corrêa de Lima">
+  <!-- Melhoria: Favicon -->
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+  
+  <title>Portfólio de Eduardo Corrêa de Lima</title>
+  
+  <!-- Melhoria: Pré-conexão para CDNs -->
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+ 
+</head>
+<body>
+  <button id="theme-toggle" class="theme-toggle">
+    <i class="fas fa-moon"></i> <!-- Ícone para o modo escuro -->
+  </button>
+  
+  <!-- Google Translate -->
+<div id="google_translate_element"></div>
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'pt', // Defina o idioma padrão da sua página
+      autoDisplay: false
+    }, 'google_translate_element');
+  }
+</script>
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+  <!-- Melhoria: Landmark ARIA para header -->
+  <header class="header" role="banner">
+    <div class="container header-content">
+      <!-- Melhoria: Nível de cabeçalho hierárquico -->
+      <h1 class="logo" role="heading" aria-level="1">Eduardo Corrêa de Lima</h1>
+      
+      <!-- Melhoria: Nav semântico -->
+      <nav class="nav" id="nav" role="navigation" aria-label="Menu principal">
+        <a href="sobre.html" class="nav-link" data-i18n="about">Sobre Mim</a>
+        <a href="projetos.html" class="nav-link" data-i18n="projects">Projetos</a>
+        <a href="contato.html" class="nav-link" data-i18n="contact">Contato</a>
+      </nav>
+      
+      <!-- Melhoria: Botão acessível -->
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
+        <i class="fas fa-bars" aria-hidden="true"></i>
+      </button>
+    </div>
+
+    
+    
+</div>
+  </header>
+
+  <!-- Melhoria: Main landmark -->
+  <main class="home" role="main">
+    <div class="card">
+      <h2 data-i18n="welcome">Bem-vindo ao meu portfólio!</h2>
+      <p>Sou Eduardo Corrêa de Lima, estudante de Engenharia de Software com foco em criação de sites, desenvolvimento de jogos, 
+        programação em Python e criação de soluções digitais. Explore meus projetos e entre em contato!</p>
+      <!-- Melhoria: Botão com role explícito -->
+      <a href="projetos.html" class="btn" role="button">Veja meus projetos</a>
+    </div>
+  </main>
+
+  <!-- Melhoria: Footer semântico -->
+  <footer class="footer" role="contentinfo">
+    <p>© 2025 Eduardo Corrêa de Lima — Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Melhoria: Carregamento não-bloqueante -->
+  <script src="script.js" defer></script>
+</body>
+</html>

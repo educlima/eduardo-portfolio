@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato - Eduardo Corrêa de Lima</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+ 
+  <button id="theme-toggle" class="theme-toggle">
+    <i class="fas fa-moon"></i> <!-- Ícone para o modo escuro -->
+  </button>
+  
+  <!-- Google Translate -->
+  <div id="google_translate_element"></div>
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'pt', // Defina o idioma padrão da sua página
+        includedLanguages: 'pt,en,fr', // Idiomas que você quer permitir
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+        autoDisplay: false
+      }, 'google_translate_element');
+    }
+  </script>
+  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+  <header class="header">
+    <div class="container header-content">
+      <h1 class="logo">Eduardo Corrêa de Lima</h1>
+      <nav class="nav" id="nav" aria-label="Main navigation">
+        <a href="index.html" class="nav-link" data-i18n="home">Início</a>
+        <a href="sobre.html" class="nav-link" data-i18n="about">Sobre Mim</a>
+        <a href="projetos.html" class="nav-link" data-i18n="projects">Projetos</a>
+      </nav>
+      <button class="menu-toggle" id="menu-toggle"><i class="fas fa-bars"></i></button>
+    </div>
+
+   
+  </header>
+
+  <main class="container">
+    <section class="contact-section">
+      <!-- Seção de Informações de Contato -->
+      <div class="contact-card glass-card">
+        <h2><i class="fas fa-envelope"></i> Contato</h2>
+        <div class="contact-info">
+          <p><i class="fas fa-at"></i> <a href="mailto:educlima.es@gmail.com">educlima.es@gmail.com</a></p>
+        </div>
+        
+        <!-- Redes Sociais -->
+        <div class="social-links">
+          <h3><i class="fas fa-share-alt"></i> Redes Sociais</h3>
+          <div class="social-grid">
+            <a href="https://github.com/educlima" class="social-btn github">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="https://instagram.com/profeduclima.quim" class="social-btn instagram">
+              <i class="fab fa-instagram"></i> Instagram
+            </a>
+            <a href="https://linkedin.com/in/eduardo-limaaa" class="social-btn linkedin">
+              <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Formulário Moderno -->
+      <form class="contact-form glass-card">
+        <h2><i class="fas fa-paper-plane"></i> Envie uma Mensagem</h2>
+        
+        <div class="input-group floating">
+          <input type="text" id="nome" required>
+          <label for="nome">Nome Completo</label>
+        </div>
+        
+        <div class="input-group floating">
+          <input type="email" id="email" required>
+          <label for="email">Email</label>
+        </div>
+        
+        <div class="input-group">
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" rows="5" required></textarea>
+        </div>
+        
+        <button type="submit" class="btn pulse">
+          <i class="fas fa-paper-plane"></i> Enviar Mensagem
+        </button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Eduardo Corrêa de Lima — Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
